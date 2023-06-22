@@ -10,7 +10,13 @@
           </tr>
       </thead>
       <tbody>
-
+        <tr scope="row" *ngFor='let panel of panelData'>
+          <th scope="row">{{panel.panel_name}}</th>
+          <td>{{panel.mac_id}}</td>
+          <td>{{panel.Lat}}</td>
+          <td>{{panel.Lng}}</td>
+          <td><img width="15" alt="Map marker" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Map_marker.svg/256px-Map_marker.svg.png"></td>
+        </tr>
       </tbody>
   </table>
 </div>
